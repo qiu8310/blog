@@ -1,0 +1,37 @@
+
+#my-dockContainer { position: fixed; bottom: 12px; height: 120px; text-align: center; -webkit-border-radius: 6px; -moz-border-radius: 6px; width: 100%; line-height: 1; z-index: 999999; }
+#my-dockContainer #my-dockWrapper { width: auto; display: inline-block; position: relative; border-bottom: solid 2px rgba(255,255,255,.35); line-height: 0; }
+
+#my-dockContainer div.cap { display: block; height: 100px; width: 40px; background: url(https://raw.github.com/qiu8310/test/master/static/img/dock-background-left-v2.png) bottom left no-repeat; }
+
+#my-dockContainer div.cap.left { position: absolute; bottom: 0px; left: 0px; }
+#my-dockContainer div.cap.right { background-position: right bottom; position: absolute; top: 0px; right: 0px; }
+#my-dockContainer ul.osx-dock { display: inline-block; height: 130px; padding: 0 40px 0 0; background: url(https://raw.github.com/qiu8310/test/master/static/img/dock-background-left-v2.png) no-repeat right bottom; overflow: hidden; margin: 0 0 0 40px; }
+#my-dockContainer ul.osx-dock li { display: block; position: relative; float: left; width: 50px; height: 50px; margin: 70px 0 4px 0; -webkit-transition: 0.15s linear; -webkit-transition-property: -webkit-transform margin; text-align: center; }
+
+#my-dockContainer ul.osx-dock li a { display: block; height: 50px; padding: 0 1px; -webkit-transition: 0.15s linear; -webkit-transition-property: -webkit-transform margin; margin: 0;
+	-webkit-box-reflect: below 2px
+	-webkit-gradient(linear, left top, left bottom, from(transparent),
+	color-stop(0.45, transparent), to(rgba(255, 255, 255, 0.25)));
+}
+#my-dockContainer ul.osx-dock li a img { width: 48px; }
+
+#my-dockContainer ul.osx-dock li:hover { 
+	margin-left: 9px; margin-right: 9px;
+	z-index: 200;
+}
+#my-dockContainer ul.osx-dock li:hover a { 
+	-webkit-transform-origin: center bottom;
+	-webkit-transform: scale(1.5);
+}
+#my-dockContainer ul.osx-dock li.nearby { 
+	margin-left: 6px; margin-right: 6px;
+	z-index: 100;
+}
+#my-dockContainer ul.osx-dock li.nearby a { 
+	-webkit-transform-origin: center bottom;
+	-webkit-transform: scale(1.25);
+}
+
+#my-dockContainer ul.osx-dock li span { background: rgba(0,0,0,0.75); position: absolute; bottom: 80px; margin: 0 auto; display: none; width: auto; height: auto; font-size: 11px; font-weight: bold; padding: 3px 6px; -webkit-border-radius: 6px; color: #fff; line-height: 16px; }
+#my-dockContainer ul.osx-dock li:hover span { display: block; }
